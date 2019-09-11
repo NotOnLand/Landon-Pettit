@@ -6,7 +6,6 @@
   <title>Landon Pettit Art & Design - Home</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
-  <script src="/path/to/isotope.pkgd.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -24,12 +23,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul id="navigation" class="navbar-nav mr-auto">
-            <li class="nav-item mx-auto"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item mx-auto active"><a class="nav-link" href="index.html">Home</a></li>
             <li class="nav-item mx-auto"><a class="nav-link" href="about.html">About</a></li>
             <li class="nav-item mx-auto"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
           <hr>
-          <ul id="social" class="navbar-nav d-flex flex-flow justify-content-around">
+          <ul id="social" class="navbar-nav d-flex flex-flow justify-content-around d-md-none">
             <li class="nav-item"><a href="https://society6.com/notonland" target="_blank"><img src="images/society6.svg" alt="Society6"></a></li>
             <li class="nav-item"><a href="https://www.redbubble.com/people/stskeletine" target="_blank"><img src="images/redbubble.svg" alt="Redbubble"></a></li>
             <li class="nav-item"><a href="https://landrawings.tumblr.com/" target="_blank"><img src="images/tumblr.svg" alt="Tumblr"></a></li>
@@ -38,9 +37,9 @@
         </div>
     </nav>
 
-    <article class="grid">
+    <article class="works">
 
-      <div class="grid-item grid-item--width2">
+      <div class="work-item work-item--width2">
         <div class="image">
         </div>
         <div class="caption">
@@ -50,7 +49,7 @@
         </div>
       </div>
 
-      <div class="grid-item">
+      <div class="work-item">
         <div class="image">
         </div>
         <div class="caption">
@@ -60,7 +59,7 @@
         </div>
       </div>
 
-      <div class="grid-item">
+      <div class="work-item">
         <div class="image">
         </div>
         <div class="caption">
@@ -76,5 +75,13 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script>
+  $('.works').isotope({
+    // options
+    itemSelector: '.work-item',
+    layoutMode: 'fitRows'
+  });
+</script>
 </body>
 </html>

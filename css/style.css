@@ -73,10 +73,6 @@ hr {
   height: auto;
 }
 
-.grid-item {
-  width: 50%;
-}
-
-.grid-item--width2 {
+.grid-item, .grid-item--width2 {
   width: 100%;
 }
