@@ -6,6 +6,7 @@
   <title>Landon Pettit Art & Design - Home</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -44,31 +45,75 @@
           <img src="images/books-small.jpg" alt="Three books lying on a table" />
         </div>
         <div class="caption">
-          <h3>Shadowed Hills Collection</h3>
-          <p>A collection of covers for dark books by West Virginian authors</p>
-          <a href="books.html" class="moreinfo">More Info</a>
+          <a href="books.html" class="moreinfo">
+              <h3>Shadowed Hills Collection</h3>
+              <p>A collection of covers for dark books by West Virginian authors</p>
+              More Info
+          </a>
+        </div>
+      </div>
+
+      <div class="work-item work-item--width2">
+        <div class="image">
+          <img src="images/ghost-small.jpg" alt="A Ouija board pointing to NO" class="focusdown" />
+        </div>
+        <div class="caption">
+          <a href="ghost.html" class="moreinfo">
+            <h3>Ghosts Make Terrible Roommates</h3>
+            <p>A series of photographs</p>
+            More Info</a>
+        </div>
+      </div>
+
+      <div class="work-item work-item--width2">
+        <div class="image">
+          <img src="images/weather.jpg" alt="Mini site for a weather app" class="focusup" />
+        </div>
+        <div class="caption">
+          <a href="weather.html" class="moreinfo">
+            <h3>Happy Weather Minisite</h3>
+            <p>A minisite for a weather app</p>
+            More Info
+          </a>
         </div>
       </div>
 
       <div class="work-item">
         <div class="image">
-          <img src="images/ghost-small.jpg" alt="A Ouija board pointing to NO" />
+          <img src="images/flatwoods-small.jpg" alt="Flatwoods Monster silhouette in halftone West Virginia" />
         </div>
         <div class="caption">
-          <h3>Ghosts Make Terrible Roommates</h3>
-          <p>A series of photographs</p>
-          <a href="ghost.html" class="moreinfo">More Info</a>
+          <a href="flatwoods.html" class="moreinfo">
+            <h3>Flatwoods Monster, WV</h3>
+            <p>Some spooky cryptid themed silkscreen prints</p>
+            More Info
+          </a>
         </div>
       </div>
 
       <div class="work-item">
         <div class="image">
-          <img src="images/weather.jpg" alt="Mini site for a weather app" />
+          <img src="images/magazine.jpg" alt="The cover of The Tentacle magazine" class="focusup" />
         </div>
         <div class="caption">
-          <h3>Happy Weather Minisite</h3>
-          <p>A minisite for a weather app</p>
-          <a href="weather.html" class="moreinfo">More Info</a>
+          <a href="magazine.html" class="moreinfo">
+            <h3>The Tentacle - March 2019</h3>
+            <p>A satirical magazine</p>
+            More Info
+          </a>
+        </div>
+      </div>
+
+      <div class="work-item">
+        <div class="image">
+          <img src="images/facebook-thumb.jpg" alt="An urgent Messenger bubble" />
+        </div>
+        <div class="caption">
+          <a href="weather.html" class="moreinfo">
+            <h3>Dead Girlfriend Story</h3>
+            <p>An interactive adaptation of an internet horror story</p>
+            More Info
+          </a>
         </div>
       </div>
 
@@ -80,7 +125,14 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="js/isotope.pkgd.min.js"></script>
 <script>
-  &('')
+  $('.image').click(function() {
+    if (!$(this).next().hasClass('clicked')) {
+      $('.clicked').removeClass('clicked');
+      $(this).next().addClass('clicked');
+    } else {
+      $('.clicked').removeClass('clicked');
+    }
+  });
 </script>
 <script>
   $('.works').isotope({
