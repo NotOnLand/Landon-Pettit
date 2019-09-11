@@ -73,6 +73,32 @@ hr {
   height: auto;
 }
 
-.grid-item, .grid-item--width2 {
+.work-item, .work-item--width2 {
+  position: relative;
   width: 100%;
+  margin-top: 1rem;
+}
+
+.work-item .caption, .work-item--width2 .caption {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(50, 50, 60, 0.7);
+  box-sizing: border-box;
+  padding: 1rem;
+  transition: .2s;
+  height: auto;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.work-item img, .work-item--width2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.work-item img:hover + .caption, .work-item img:focus + .caption, .work-item--width2 img:hover + .caption, .work-item--width2 img:focus + .caption {
+  max-height: 60%;
 }

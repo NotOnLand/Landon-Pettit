@@ -48,31 +48,52 @@ hr {
 #navigation {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-#navigation a {
-  font-size: 1rem;
-  padding: .5rem 1rem;
-  font-size: 1.7rem;
+  a {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    font-size: 1.7rem;
+  }
 }
 
 #social {
   flex-flow: row;
   margin: 2rem 1rem;
+  li {
+    max-width: 12.5vw;
+    min-width: 3rem;
+    display: inline-block;
+    margin: 0 .5rem;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
-#social li {
-  max-width: 12.5vw;
-  min-width: 3rem;
-  display: inline-block;
-  margin: 0 .5rem;
-}
-
-#social img {
-  max-width: 100%;
-  height: auto;
-}
-
-.grid-item, .grid-item--width2 {
+.work-item, .work-item--width2 {
+  position: relative;
   width: 100%;
+  margin-top: 1rem;
+  .caption {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(50,50,60,.7);
+    box-sizing: border-box;
+    padding: 1rem;
+    transition: .2s;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    // transform: translatey(-100%);
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    &:hover + .caption, &:focus + .caption {
+      max-height: 60%
+    }
+  }
 }
