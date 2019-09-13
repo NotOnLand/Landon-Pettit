@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landon Pettit Art & Design - Home</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -38,105 +38,132 @@
         </div>
     </nav>
 
-    <article class="works row">
 
-      <div class="work-item work-item--width2">
+    <div class="dropdown row col-12" id="filter">
+      <button class="btn btn-outline-light dropdown-toggle btn-large btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+        <i class="icon"></i>
+      </button>
+      <div class="dropdown-menu">
+        <h6 class="dropdown-header">Filter</h6>
+        <a class="dropdown-item filter act-filter" href="#" data-filter=".front" id="filter1">Top</a>
+        <a class="dropdown-item filter" href="#" data-filter="*">All</a>
+        <a class="dropdown-item filter" href="#" data-filter=".web">Web</a>
+        <a class="dropdown-item filter" href="#" data-filter=".print">Print</a>
+        <a class="dropdown-item filter" href="#" data-filter=".shirt">Shirts</a>
+        <a class="dropdown-item filter" href="#" data-filter=".photo">Photography</a>
+        <div class="dropdown-divider"></div>
+        <h6 class="dropdown-header">Sort by</h6>
+        <a class="dropdown-item sort" href="#" data-sortby="date">Date</a>
+        <a class="dropdown-item sort" href="#" data-sortby="name">Name</a>
+      </div>
+    </div>
+
+    <article class="works row">
+      <div class="work-item work-item--width2 front print ">
         <div class="image">
           <img src="images/books-small.jpg" alt="Three books lying on a table" />
         </div>
         <div class="caption">
           <a href="books.html" class="moreinfo">
-              <h3>Shadowed Hills Collection</h3>
+              <h3 class="name">Shadowed Hills Collection</h3>
+              <span class="date">20181215</span>
               <p>A collection of covers for dark books by West Virginian authors</p>
               More Info
           </a>
         </div>
       </div>
 
-      <div class="work-item work-item--width2">
+      <div class="work-item work-item--width2 front photo">
         <div class="image">
           <img src="images/ghost-small.jpg" alt="A Ouija board pointing to NO" class="focusdown" />
         </div>
         <div class="caption">
           <a href="ghost.html" class="moreinfo">
-            <h3>Ghosts Make Terrible Roommates</h3>
+            <h3 class="name">Ghosts Make Terrible Roommates</h3>
+            <span class="date">20190430</span>
             <p>A series of photographs</p>
             More Info</a>
         </div>
       </div>
 
-      <div class="work-item work-item--width2">
+      <div class="work-item work-item--width2 front web">
         <div class="image">
           <img src="images/weather.jpg" alt="Mini site for a weather app" class="focusup" />
         </div>
         <div class="caption">
           <a href="weather.html" class="moreinfo">
-            <h3>Happy Weather Minisite</h3>
+            <h3 class="name">Happy Weather Minisite</h3>
+            <span class="date">20190230</span>
             <p>A minisite for a weather app</p>
             More Info
           </a>
         </div>
       </div>
 
-      <div class="work-item">
+      <div class="work-item front print shirt">
         <div class="image">
           <img src="images/flatwoods-small.jpg" alt="Flatwoods Monster silhouette in halftone West Virginia" />
         </div>
         <div class="caption">
           <a href="flatwoods.html" class="moreinfo">
-            <h3>Flatwoods Monster, WV</h3>
+            <h3 class="name">Flatwoods Monster, WV</h3>
+            <span class="date">20190601</span>
             <p>Some spooky cryptid themed silkscreen prints</p>
             More Info
           </a>
         </div>
       </div>
 
-      <div class="work-item">
+      <div class="work-item front print">
         <div class="image">
           <img src="images/magazine.jpg" alt="The cover of The Tentacle magazine" class="focusup" />
         </div>
         <div class="caption">
           <a href="magazine.html" class="moreinfo">
-            <h3>The Tentacle - March 2019</h3>
+            <h3 class="name">The Tentacle - March 2019</h3>
+            <span class="date">20190330</span>
             <p>A satirical magazine</p>
             More Info
           </a>
         </div>
       </div>
 
-      <div class="work-item">
+      <div class="work-item front web">
         <div class="image">
           <img src="images/facebook-thumb.jpg" alt="An urgent Messenger bubble" />
         </div>
         <div class="caption">
           <a href="weather.html" class="moreinfo">
-            <h3>Dead Girlfriend Story</h3>
+            <h3 class="name">Dead Girlfriend Story</h3>
+            <span class="date">20190430</span>
             <p>An interactive adaptation of an internet horror story</p>
             More Info
           </a>
         </div>
       </div>
 
-      <div class="work-item">
+      <div class="work-item front print shirt">
         <div class="image">
           <img src="images/sustainu/bigtop.jpg" alt="A circus ticket for the St. Louis Cardinals" />
         </div>
         <div class="caption">
           <a href="sustainu.html" class="moreinfo">
-            <h3>T-Shirts from SustainU</h3>
+            <h3 class="name">T-Shirts from SustainU</h3>
+            <span class="date">20190913</span>
             <p>The fruits of my internship at SustainU</p>
             More Info
           </a>
         </div>
       </div>
 
-      <div class="work-item">
+      <div class="work-item front photo">
         <div class="image">
           <img src="images/pols-small.jpg" alt="Polaroid photos of strange things" />
         </div>
         <div class="caption">
           <a href="polaroids.html" class="moreinfo">
-            <h3>Unusual Occurances</h3>
+            <h3 class="name">Unusual Occurances</h3>
+            <span class="date">20181215</span>
             <p>A series of Polaroid photos of weird things</p>
             More Info
           </a>
@@ -145,7 +172,18 @@
 
     </article>
 
+    <footer class="col-12">
+      <p>©2019 Landon Pettit<br>
+        <a href="index.html" class="active">Home</a>
+        &nbsp;&nbsp; • &nbsp;&nbsp;
+        <a href="about.html">About</a>
+        &nbsp;&nbsp; • &nbsp;&nbsp;
+        <a href="contact.html">Contact</a>
+        </p>
+    </footer>
+
   </div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -161,11 +199,49 @@
   });
 </script>
 <script>
-  $('.works').isotope({
+  var $works = $('.works').isotope({
     // options
     itemSelector: '.work-item',
-    layoutMode: 'fitRows'
+    layoutMode: 'fitRows',
+    filter: '.front',
+    getSortData: {
+      name: '.name',
+      category: '.date'
+    }
   });
+
+  var currentFilter = $('#filter1');
+  var currentSort = $('#sort1');
+  var ascending = 'false';
+    $(".dropdown-menu a.filter").click(function(){
+      $(".btn:first-child").html($(this).text()+' <span class="caret"></span>');
+      var filterValue = $(this).attr('data-filter');
+      $works.isotope({ filter: filterValue });
+      currentFilter.removeClass('act-filter');
+      $(this).addClass('act-filter');
+      currentFilter = $(this);
+    });
+    $(".dropdown-menu a.sort").click(function(){
+      var sortValue = $(this).attr('data-sortby');
+      if ($(this).hasClass('ascending')) {
+        ascending = false;
+        $(this).removeClass('ascending');
+        $(this).addClass('descending');
+
+      } else {
+         // if($(this).hasClass('descending'))
+        ascending = true;
+        $(this).removeClass('descending');
+        $(this).addClass('ascending');
+      }
+
+      $works.isotope({ sortBy : [ sortValue, 'name'], sortAscending: ascending });
+      currentSort.removeClass('act-sort');
+      $(this).addClass('act-sort');
+      currentSort = $(this);
+    });
+  // dropdown-item filter
+
 </script>
 </body>
 </html>

@@ -4,6 +4,7 @@ body {
   font-family: Ubuntu, Helvetica, Arial, Sans-Serif;
   font-weight: 400;
   min-height: 100%;
+  padding-bottom: 5rem;
 }
 
 a {
@@ -85,12 +86,105 @@ hr {
   height: auto;
 }
 
+#filter {
+  display: block;
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  z-index: 3;
+  width: 25rem;
+  max-width: 70vw;
+}
+
+#filter .btn-block {
+  height: 2.5rem;
+  width: 10rem;
+  display: block;
+  margin: 0 auto;
+}
+
+#filter::after {
+  display: block;
+  content: '';
+  width: 90vw;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  border-top: solid 1px rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, 1.25rem);
+}
+
+#filter * {
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+
+#filter .icon {
+  content: url(../images/filter.svg);
+  height: 80%;
+  margin-top: 0.1rem;
+}
+
+#filter .dropdown-header {
+  font-weight: bold;
+}
+
+#filter .dropdown-menu.show {
+  position: relative !important;
+  transform: translate3d(0, 0, 0) !important;
+  left: auto !important;
+  width: 100%;
+  background-color: #32323C;
+}
+
+#filter .dropdown-item.act-filter, #filter .dropdown-item.act-sort {
+  background-color: #278B5A;
+}
+
+#filter .btn-outline-light:not(:disabled):not(.disabled).active, #filter .btn-outline-light:not(:disabled):not(.disabled):active, #filter .btn-outline-light.dropdown-toggle {
+  background-color: #32323C;
+}
+
+#filter .sort.ascending::after {
+  display: inline-block;
+  content: url(../images/down.svg);
+  width: 1.3rem;
+  line-height: 0px;
+  margin-left: 0.2rem;
+  vertical-align: text-top;
+}
+
+#filter .sort.descending::after {
+  display: inline-block;
+  content: url(../images/up.svg);
+  width: 1.3rem;
+  line-height: 0px;
+  margin-left: 0.2rem;
+  vertical-align: text-top;
+}
+
+#filter #dropdownMenuButton::after {
+  display: none;
+}
+
+.works {
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+}
+
 .work-item, .work-item--width2 {
   position: relative;
   display: block;
   width: 100%;
   margin-top: 1rem;
   overflow: hidden;
+}
+
+.work-item .date, .work-item--width2 .date {
+  display: none;
 }
 
 .work-item .caption, .work-item--width2 .caption {
@@ -135,4 +229,33 @@ hr {
 
 .work-item img.focusdown, .work-item--width2 img.focusdown {
   object-position: 50% 90%;
+}
+
+footer {
+  position: absolute;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 1.75rem;
+}
+
+footer a {
+  color: inherit;
+  transition: color .2s;
+}
+
+footer a.active {
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: white;
 }
