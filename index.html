@@ -206,7 +206,10 @@
     filter: '.front',
     getSortData: {
       name: '.name',
-      category: '.date'
+      date: function( itemElem ) {
+        var date = $( itemElem ).find('.date').text();
+        return parseInt( 30000000 - date );
+      }
     }
   });
 
@@ -235,7 +238,8 @@
         $(this).addClass('ascending');
       }
 
-      $works.isotope({ sortBy : [ sortValue, 'name'], sortAscending: ascending });
+      $works.isotope({ sortBy : sortValue, sortAscending: ascending });
+
       currentSort.removeClass('act-sort');
       $(this).addClass('act-sort');
       currentSort = $(this);
