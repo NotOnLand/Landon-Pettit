@@ -28,7 +28,7 @@
             <li class="nav-item mx-auto active"><a class="nav-link" href="about.html">About</a></li>
             <li class="nav-item mx-auto"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
-          <hr>
+          <hr class="d-block d-md-none">
           <ul id="social" class="navbar-nav d-flex flex-flow justify-content-around d-md-none">
             <li class="nav-item"><a href="https://society6.com/notonland" target="_blank"><img src="images/society6.svg" alt="Society6"></a></li>
             <li class="nav-item"><a href="https://www.redbubble.com/people/stskeletine" target="_blank"><img src="images/redbubble.svg" alt="Redbubble"></a></li>
@@ -40,17 +40,17 @@
 
     <article class="about">
 
-      <section class="bio col-12">
-        <h3>About Me</h3>
-        <img src="images/me.jpg" alt="Me and my dog" />
-        <p>Hi, I'm Landon. I'm a graphic designer in my senior year at West Virginia University, currently interning at SustainU Clothing.</p>
+      <section class="bio">
+        <h3 class="col-12 col-md-6 float-left">About Me</h3>
+        <img class="col-12 col-md-5 float-right" src="images/me.jpg" alt="Me and my dog" />
+        <p class="col-12 col-md-6 float-left">Hi, I'm Landon. I'm a graphic designer in my senior year at West Virginia University, currently interning at SustainU Clothing.</p>
       </section>
-      <section class="resume col-12">
-        <h3>Resume</h3>
-          <section>
+
+      <h3 class="col-12 float-left">Resume</h3>
+      <section class="resume col-12 float-left">
             <h4>Skills & Proficiencies</h4>
             <section>
-              Adobe Creative Suite
+              <h5>Adobe Creative Suite</h5>
               <ul>
                 <li>Photoshop</li>
                 <li>Illustrator</li>
@@ -61,7 +61,7 @@
             </section>
 
             <section>
-              Microsoft Office
+              <h5>Microsoft Office</h5>
               <ul>
                 <li>Word</li>
                 <li>Excel</li>
@@ -71,7 +71,7 @@
             </section>
 
             <section>
-              Computer Skills
+              <h5>Computer Skills</h5>
               <ul>
                 <li>Hardware/software troubleshooting & repair</li>
                 <li>Typing 70 WPM</li>
@@ -79,7 +79,7 @@
             </section>
 
             <section>
-              Languages
+              <h5>Languages</h5>
               <ul>
                 <li>HTML/CSS</li>
                 <li>Java/Javascript</li>
@@ -87,12 +87,11 @@
                 <li>Basic Latin & French</li>
               </ul>
             </section>
-          </section>
 
           <section>
             <h4>Education</h4>
             <section>
-              West Virginia University
+              <h5>West Virginia University</h5>
               <ul>
                 <li>College of Creative Arts
                   <ul>
@@ -106,24 +105,22 @@
                 </li>
               </ul>
             </section>
-          </section>
 
           <section>
             <h4>Work</h4>
             <section>
-              SustainU Clothing
+              <h5>SustainU Clothing</h5>
               <ul>
                 <li>Graphic Design Intern (March 2019-Present)</li>
               </ul>
             </section>
 
             <section>
-              WVU College of Creative Arts
+              <h5>WVU College of Creative Arts</h5>
               <ul>
                 <li>Office Assistant (2017-2019)</li>
               </ul>
             </section>
-          </section>
       </section>
 
     </article>
@@ -139,6 +136,14 @@
     </footer>
 
   </div>
+
+  <ul id="socialbar" class="d-none d-md-block">
+    <li class="nav-item"><a href="https://society6.com/notonland" target="_blank"><img src="images/society6.svg" alt="Society6"></a></li>
+    <li class="nav-item"><a href="https://www.redbubble.com/people/stskeletine" target="_blank"><img src="images/redbubble.svg" alt="Redbubble"></a></li>
+    <li class="nav-item"><a href="https://landrawings.tumblr.com/" target="_blank"><img src="images/tumblr.svg" alt="Tumblr"></a></li>
+    <li class="nav-item"><a href="https://www.instagram.com/landonpettit/" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a></li>
+  </ul>
+  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
