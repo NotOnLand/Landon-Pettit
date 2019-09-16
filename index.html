@@ -46,7 +46,7 @@
       <div class="dropdown-menu">
         <h6 class="dropdown-header">Filter</h6>
         <a class="dropdown-item filter act-filter" href="#" data-filter=".front" id="filter1">Top</a>
-        <a class="dropdown-item filter" href="#" data-filter="*">All</a>
+        <a class="dropdown-item filter" href="#" data-filter=".all">All</a>
         <a class="dropdown-item filter" href="#" data-filter=".web">Web</a>
         <a class="dropdown-item filter" href="#" data-filter=".print">Print</a>
         <a class="dropdown-item filter" href="#" data-filter=".shirt">Shirts</a>
@@ -59,9 +59,13 @@
     </div>
 
     <article class="works row">
-      <div class="work-item work-item--width2 front print ">
+
+      <div class="work-item work-item--width2 front all print ">
         <div class="image">
-          <img src="images/books-small.jpg" alt="Three books lying on a table" />
+          <picture class="focusup">
+            <source media="(min-width: 768px)" srcset="images/books1.jpg">
+            <img src="images/small/books1.jpg" alt="Three books lying on a table" class="focusup" />
+          </picture>
         </div>
         <div class="caption">
           <a href="books.html" class="moreinfo">
@@ -73,9 +77,12 @@
         </div>
       </div>
 
-      <div class="work-item work-item--width2 front photo">
+      <div class="work-item work-item--width2 front all photo">
         <div class="image">
-          <img src="images/ghost-small.jpg" alt="A Ouija board pointing to NO" class="focusdown" />
+          <picture class="focusdown">
+            <source media="(min-width: 768px)" srcset="images/ghost3.jpg">
+            <img src="images/small/ghost3.jpg" alt="A Ouija board pointing to NO" class="focusdown" />
+          </picture>
         </div>
         <div class="caption">
           <a href="ghost.html" class="moreinfo">
@@ -86,9 +93,12 @@
         </div>
       </div>
 
-      <div class="work-item work-item--width2 front web">
+      <div class="work-item work-item--width2 front all web">
         <div class="image">
-          <img src="images/weather.jpg" alt="Mini site for a weather app" class="focusup" />
+          <picture class="focusup">
+            <source media="(min-width: 768px)" srcset="images/weather.jpg">
+            <img src="images/small/weather.jpg" alt="Mini site for a weather app" class="focusup" />
+          </picture>
         </div>
         <div class="caption">
           <a href="weather.html" class="moreinfo">
@@ -100,9 +110,12 @@
         </div>
       </div>
 
-      <div class="work-item front print shirt">
+      <div class="work-item front all print shirt">
         <div class="image">
-          <img src="images/flatwoods-small.jpg" alt="Flatwoods Monster silhouette in halftone West Virginia" />
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/flatwoods.jpg">
+            <img src="images/small/flatwoods.jpg" alt="Flatwoods Monster silhouette in halftone West Virginia" />
+          </picture>
         </div>
         <div class="caption">
           <a href="flatwoods.html" class="moreinfo">
@@ -114,9 +127,12 @@
         </div>
       </div>
 
-      <div class="work-item front print">
+      <div class="work-item front all print">
         <div class="image">
-          <img src="images/magazine.jpg" alt="The cover of The Tentacle magazine" class="focusup" />
+          <picture class="focusup">
+            <source media="(min-width: 768px)" srcset="images/magazine.jpg">
+            <img src="images/small/magazine.jpg" alt="The March 2019 edition of The Tentacle magazine" class="focusup" />
+          </picture>
         </div>
         <div class="caption">
           <a href="magazine.html" class="moreinfo">
@@ -128,9 +144,12 @@
         </div>
       </div>
 
-      <div class="work-item front web">
+      <div class="work-item front all web">
         <div class="image">
-          <img src="images/facebook-thumb.jpg" alt="An urgent Messenger bubble" />
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/facebook.jpg">
+            <img src="images/small/facebook.jpg" alt="An urgent Facebook message" />
+          </picture>
         </div>
         <div class="caption">
           <a href="weather.html" class="moreinfo">
@@ -142,7 +161,7 @@
         </div>
       </div>
 
-      <div class="work-item front print shirt">
+      <div class="work-item front">
         <div class="image">
           <img src="images/sustainu/bigtop.jpg" alt="A circus ticket for the St. Louis Cardinals" />
         </div>
@@ -156,9 +175,127 @@
         </div>
       </div>
 
-      <div class="work-item front photo">
+      <div class="work-item all print shirt">
         <div class="image">
-          <img src="images/pols-small.jpg" alt="Polaroid photos of strange things" />
+          <img src="images/sustainu/bigtop.jpg" alt="A circus ticket for the St. Louis Cardinals" />
+        </div>
+        <div class="caption">
+          <a href="sustainu.html" class="moreinfo">
+            <h3 class="name">Big Top</h3>
+            <span class="date">20190815</span>
+            <p>Circus themed MLB T-Shirt Club Package</p>
+            More Info
+          </a>
+        </div>
+      </div>
+
+      <div class="work-item all print shirt">
+        <div class="image">
+          <img src="images/sustainu/asteroids.jpg" alt="A baseball bat rocket ship" />
+        </div>
+        <div class="caption">
+          <a href="sustainu.html" class="moreinfo">
+            <h3 class="name">Asteroids</h3>
+            <span class="date">20190615</span>
+            <p>Unused space themed MLB T-Shirt Club Package</p>
+            More Info
+          </a>
+        </div>
+      </div>
+
+      <div class="work-item all print shirt">
+        <div class="image">
+          <img src="images/sustainu/ferns.jpg" alt="West Virginia made up of ferns" />
+        </div>
+        <div class="caption">
+          <a href="sustainu.html" class="moreinfo">
+            <h3 class="name">West Fern-ginia</h3>
+            <span class="date">20190513</span>
+            <p>1-color West Virginia ferns design</p>
+            More Info
+          </a>
+        </div>
+      </div>
+
+      <div class="work-item all print shirt">
+        <div class="image">
+          <img src="images/sustainu/funky.jpg" alt="A face with a baseball-shaped afro" />
+        </div>
+        <div class="caption">
+          <a href="sustainu.html" class="moreinfo">
+            <h3 class="name">Funky</h3>
+            <span class="date">20190713</span>
+            <p>Unused funk music themed MLB T-Shirt Club Package</p>
+            More Info
+          </a>
+        </div>
+      </div>
+
+      <div class="work-item all print shirt">
+        <div class="image">
+          <img src="images/sustainu/groovy.jpg" alt="Hippie-style flowers and shapes" />
+        </div>
+        <div class="caption">
+          <a href="sustainu.html" class="moreinfo">
+            <h3 class="name">Groovy</h3>
+            <span class="date">20190713</span>
+            <p>Unused psychedelic themed MLB T-Shirt Club Package</p>
+            More Info
+          </a>
+        </div>
+      </div>
+
+      <div class="work-item all print shirt">
+        <div class="image">
+          <img src="images/sustainu/heartwood.jpg" alt="Tree rings in the shape of West Virginia" />
+        </div>
+        <div class="caption">
+          <a href="sustainu.html" class="moreinfo">
+            <h3 class="name">Heartwood</h3>
+            <span class="date">20190613</span>
+            <p>Unused design for Barnwood Living</p>
+            More Info
+          </a>
+        </div>
+      </div>
+
+      <div class="work-item all print shirt">
+        <div class="image">
+          <img src="images/sustainu/mudrun.jpg" alt="A school bus with monster truck wheels" />
+        </div>
+        <div class="caption">
+          <a href="sustainu.html" class="moreinfo">
+            <h3 class="name">MudRun 2019</h3>
+            <span class="date">20190513</span>
+            <p>3-color design for MudRun 2019</p>
+            More Info
+          </a>
+        </div>
+      </div>
+
+      <div class="work-item all print shirt">
+        <div class="image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/diehard.jpg">
+            <img src="images/small/diehard.jpg" alt="Emojis portraying the end of Die Hard" />
+          </picture>
+        </div>
+        <div class="caption">
+          <a href="https://www.redbubble.com/people/stskeletine/works/29394809-old-traditions-die-hard" class="moreinfo">
+            <h3 class="name">Old Traditions Die Hard</h3>
+            <span class="date">20171224</span>
+            <p>There are two types of people: those who don’t think Die Hard is a Christmas movie, and those who know better.</p>
+            More Info
+          </a>
+        </div>
+      </div>
+
+      <div class="work-item front all photo">
+        <div class="image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/pols.jpg">
+            <img src="images/small/pols.jpg" alt="Polaroid photos of strange things" />
+          </picture>
         </div>
         <div class="caption">
           <a href="polaroids.html" class="moreinfo">

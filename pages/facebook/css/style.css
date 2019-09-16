@@ -1,0 +1,297 @@
+body {
+  background-color: #1a1a1a;
+  font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#page {
+  background-color: white;
+  width: 600px;
+  height: calc(100vh - 3px);
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 1.5px solid #dedede;
+  box-shadow: 0 0 700px rgba(255,255,255,.2);
+}
+
+#hello {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: black;
+  color: white;
+}
+
+#hello div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  min-width: 50%;
+  text-align: center;
+}
+
+#hello button {
+  color: white;
+  background-color: black;
+  border: white 1.5px solid;
+  font-size: .9rem;
+  padding: .5em;
+  cursor: pointer;
+  border-radius: .5em;
+  transition: .2s;
+  width: 14em;
+  text-align: center;
+  margin-right: 1em;
+  margin-bottom: 2em;
+}
+
+#hello h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#hello button:hover {
+  background-color: #505050;
+}
+
+#hello button:active {
+  color: black;
+  background-color: white;
+}
+
+#top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1.5px solid #dedede;
+  z-index: 2;
+}
+
+#top h2, #top a {
+  font-size: 18px;
+  padding: .6em .75em;
+  display: inline-block;
+}
+
+#top a {
+  float: right;
+  opacity: .5;
+  transition: opacity .2s;
+  cursor: pointer;
+}
+
+#top a:hover {
+  opacity: .7;
+}
+
+#top a:active {
+  opacity: 1;
+}
+
+#chat {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 120px;
+  background-color: #f2f2f2;
+  border-top: 1.5px solid #dedede;
+  z-index: 2;
+}
+
+#chat button {
+  position: absolute;
+  display: block;
+  top: 15px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  resize: none;
+  width: 560px;
+  border: 1.5px solid #dedede;
+  background-color: white;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+#chat button span {
+  display: block;
+  position: absolute;
+  padding: .5em;
+  opacity: .5;
+}
+
+#chat button span.tl {
+  top: 0;
+  left: 0;
+}
+
+#chat button span.tr {
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+
+#chat button span.bl {
+  bottom: 0;
+  left: 0;
+}
+
+#chat button span.br {
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+
+#text {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 130px;
+  overflow-y: scroll;
+  z-index: 1;
+  user-select: none;
+  padding-bottom: 150px;
+  padding-top: 15px;
+}
+
+#text::-webkit-scrollbar {
+  width: 8px;
+}
+
+#text::-webkit-scrollbar-track {
+  background: white;
+}
+
+#text::-webkit-scrollbar-thumb {
+  background: #989898;
+  border-radius: 10px;
+}
+
+#text::-webkit-scrollbar-thumb:hover {
+  background: #6a6969;
+}
+
+
+span.E {
+  display: block;
+  float: left;
+  clear: both;
+  background-color: #F1F0F0;
+  max-width: 55%;
+  border-radius: 1.3em;
+  padding: 6px 12px 7px;
+  margin: 1em 0 1px 30px;
+}
+
+span.E.t {border-bottom-left-radius: 4px;}
+span.E.b {border-top-left-radius: 4px; margin-top: 1px;}
+
+span.E.photo {
+  max-width: 55%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 0;
+}
+
+span.N {
+  display: block;
+  float: right;
+  clear: both;
+  background-color: #09F;
+  color: white;
+  max-width: 55%;
+  border-radius: 1.3em;
+  padding: 6px 12px 7px;
+  margin: 1em 25px 1px 0;
+}
+
+span.N.t {border-bottom-right-radius: 4px;}
+span.N.b {border-top-right-radius: 4px; margin-top: 1px;}
+
+span.date {
+  display: block;
+  clear: both;
+  text-align: center;
+  font-size: 12px;
+  opacity: .4;
+  padding: 12px 0;
+}
+
+div.narration {
+  clear: both;
+  width: 60%;
+  margin: 0 auto;
+  opacity: .8;
+  padding: 12px 0;
+}
+
+#title {
+  margin-bottom: -12px;
+  padding-bottom: 0;
+  width: 65%;
+  margin: 0 auto 0 118.4px;
+}
+
+#title + .narration {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.dots, .dots::before, .dots::after {
+  display: inline-block;
+  content: '•';
+  font-size: 1.1em;
+}
+
+.dots span {animation: dots 1s infinite linear; vertical-align: .5px; animation-delay: .33333s;}
+.dots::before {animation: dots 1s infinite linear;}
+.dots::after {animation: dots 1s infinite linear; animation-delay: .66667s;}
+
+#loading {
+  position: absolute;
+  z-index: 5;
+  bottom: 130px;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+.no {
+  visibility: hidden;
+  display: none;
+}
+
+.right {
+  float: right;
+}
+
+.END h4 {
+  font-weight: normal;
+
+}

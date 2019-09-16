@@ -1,0 +1,6 @@
+@keyframes dots {
+  0% {opacity: .5;}
+  33% {opacity: .2;}
+  66% {opacity: .2;}
+  100% {opacity: .5;}
+}

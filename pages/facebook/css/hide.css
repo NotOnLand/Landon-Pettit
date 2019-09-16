@@ -1,0 +1,7 @@
+#text > * {
+  visibility: hidden;
+}
+
+#title, #author {
+ visibility: visible;
+}

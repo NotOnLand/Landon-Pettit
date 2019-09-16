@@ -1,0 +1,1103 @@
+/*
+.##........####..##....##..########...######.
+.##.........##...###...##..##........##....##
+.##.........##...####..##..##........##......
+.##.........##...##.##.##..######.....######.
+.##.........##...##..####..##..............##
+.##.........##...##...###..##........##....##
+.########..####..##....##..########...######.
+Set data-text="" to content of the div
+*/
+.glitch {
+  background-color: #0e0f0f !important;
+  color: white;
+  position: relative;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(18px, 9999px, 17px, 0);
+  }
+  5% {
+    clip: rect(5px, 9999px, 50px, 0);
+  }
+  10% {
+    clip: rect(45px, 9999px, 15px, 0);
+  }
+  15% {
+    clip: rect(56px, 9999px, 86px, 0);
+  }
+  20% {
+    clip: rect(56px, 9999px, 9px, 0);
+  }
+  25% {
+    clip: rect(50px, 9999px, 66px, 0);
+  }
+  30% {
+    clip: rect(82px, 9999px, 56px, 0);
+  }
+  35% {
+    clip: rect(16px, 9999px, 67px, 0);
+  }
+  40% {
+    clip: rect(7px, 9999px, 72px, 0);
+  }
+  45% {
+    clip: rect(73px, 9999px, 76px, 0);
+  }
+  50% {
+    clip: rect(10px, 9999px, 37px, 0);
+  }
+  55% {
+    clip: rect(19px, 9999px, 23px, 0);
+  }
+  60% {
+    clip: rect(27px, 9999px, 51px, 0);
+  }
+  65% {
+    clip: rect(63px, 9999px, 97px, 0);
+  }
+  70% {
+    clip: rect(27px, 9999px, 82px, 0);
+  }
+  75% {
+    clip: rect(68px, 9999px, 41px, 0);
+  }
+  80% {
+    clip: rect(36px, 9999px, 93px, 0);
+  }
+  85% {
+    clip: rect(9px, 9999px, 79px, 0);
+  }
+  90% {
+    clip: rect(18px, 9999px, 19px, 0);
+  }
+  95% {
+    clip: rect(57px, 9999px, 72px, 0);
+  }
+  100% {
+    clip: rect(100px, 9999px, 79px, 0);
+  }
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 14px;
+  text-shadow: -1px 0 red;
+  top: 6px;
+  color: white;
+  background: #0e0f0f;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse !important;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(57px, 9999px, 60px, 0);
+  }
+  5% {
+    clip: rect(69px, 9999px, 69px, 0);
+  }
+  10% {
+    clip: rect(42px, 9999px, 8px, 0);
+  }
+  15% {
+    clip: rect(92px, 9999px, 71px, 0);
+  }
+  20% {
+    clip: rect(40px, 9999px, 83px, 0);
+  }
+  25% {
+    clip: rect(51px, 9999px, 22px, 0);
+  }
+  30% {
+    clip: rect(77px, 9999px, 90px, 0);
+  }
+  35% {
+    clip: rect(34px, 9999px, 25px, 0);
+  }
+  40% {
+    clip: rect(91px, 9999px, 96px, 0);
+  }
+  45% {
+    clip: rect(2px, 9999px, 33px, 0);
+  }
+  50% {
+    clip: rect(10px, 9999px, 67px, 0);
+  }
+  55% {
+    clip: rect(3px, 9999px, 39px, 0);
+  }
+  60% {
+    clip: rect(88px, 9999px, 51px, 0);
+  }
+  65% {
+    clip: rect(68px, 9999px, 55px, 0);
+  }
+  70% {
+    clip: rect(86px, 9999px, 17px, 0);
+  }
+  75% {
+    clip: rect(58px, 9999px, 85px, 0);
+  }
+  80% {
+    clip: rect(11px, 9999px, 66px, 0);
+  }
+  85% {
+    clip: rect(12px, 9999px, 88px, 0);
+  }
+  90% {
+    clip: rect(100px, 9999px, 87px, 0);
+  }
+  95% {
+    clip: rect(56px, 9999px, 17px, 0);
+  }
+  100% {
+    clip: rect(97px, 9999px, 63px, 0);
+  }
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: 10px;
+  text-shadow: 1px 0 blue;
+  top: 6px;
+  color: white;
+  background: #0e0f0f;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.glitch2 {
+  background-color: black !important;
+  color: white;
+  position: relative;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(18px, 9999px, 17px, 0);
+  }
+  5% {
+    clip: rect(5px, 9999px, 50px, 0);
+  }
+  10% {
+    clip: rect(45px, 9999px, 15px, 0);
+  }
+  15% {
+    clip: rect(56px, 9999px, 86px, 0);
+  }
+  20% {
+    clip: rect(56px, 9999px, 9px, 0);
+  }
+  25% {
+    clip: rect(50px, 9999px, 66px, 0);
+  }
+  30% {
+    clip: rect(82px, 9999px, 56px, 0);
+  }
+  35% {
+    clip: rect(16px, 9999px, 67px, 0);
+  }
+  40% {
+    clip: rect(7px, 9999px, 72px, 0);
+  }
+  45% {
+    clip: rect(73px, 9999px, 76px, 0);
+  }
+  50% {
+    clip: rect(10px, 9999px, 37px, 0);
+  }
+  55% {
+    clip: rect(19px, 9999px, 23px, 0);
+  }
+  60% {
+    clip: rect(27px, 9999px, 51px, 0);
+  }
+  65% {
+    clip: rect(63px, 9999px, 97px, 0);
+  }
+  70% {
+    clip: rect(27px, 9999px, 82px, 0);
+  }
+  75% {
+    clip: rect(68px, 9999px, 41px, 0);
+  }
+  80% {
+    clip: rect(36px, 9999px, 93px, 0);
+  }
+  85% {
+    clip: rect(9px, 9999px, 79px, 0);
+  }
+  90% {
+    clip: rect(18px, 9999px, 19px, 0);
+  }
+  95% {
+    clip: rect(57px, 9999px, 72px, 0);
+  }
+  100% {
+    clip: rect(100px, 9999px, 79px, 0);
+  }
+}
+.glitch2:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 1px;
+  text-shadow: -1px 0 red;
+  bottom: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse !important;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(57px, 9999px, 60px, 0);
+  }
+  5% {
+    clip: rect(69px, 9999px, 69px, 0);
+  }
+  10% {
+    clip: rect(42px, 9999px, 8px, 0);
+  }
+  15% {
+    clip: rect(92px, 9999px, 71px, 0);
+  }
+  20% {
+    clip: rect(40px, 9999px, 83px, 0);
+  }
+  25% {
+    clip: rect(51px, 9999px, 22px, 0);
+  }
+  30% {
+    clip: rect(77px, 9999px, 90px, 0);
+  }
+  35% {
+    clip: rect(34px, 9999px, 25px, 0);
+  }
+  40% {
+    clip: rect(91px, 9999px, 96px, 0);
+  }
+  45% {
+    clip: rect(2px, 9999px, 33px, 0);
+  }
+  50% {
+    clip: rect(10px, 9999px, 67px, 0);
+  }
+  55% {
+    clip: rect(3px, 9999px, 39px, 0);
+  }
+  60% {
+    clip: rect(88px, 9999px, 51px, 0);
+  }
+  65% {
+    clip: rect(68px, 9999px, 55px, 0);
+  }
+  70% {
+    clip: rect(86px, 9999px, 17px, 0);
+  }
+  75% {
+    clip: rect(58px, 9999px, 85px, 0);
+  }
+  80% {
+    clip: rect(11px, 9999px, 66px, 0);
+  }
+  85% {
+    clip: rect(12px, 9999px, 88px, 0);
+  }
+  90% {
+    clip: rect(100px, 9999px, 87px, 0);
+  }
+  95% {
+    clip: rect(56px, 9999px, 17px, 0);
+  }
+  100% {
+    clip: rect(97px, 9999px, 63px, 0);
+  }
+}
+.glitch2:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -1px;
+  text-shadow: 1px 0 blue;
+  bottom: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.glitch3 {
+  background-color: black !important;
+  color: white;
+  position: relative;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(18px, 9999px, 17px, 0);
+  }
+  5% {
+    clip: rect(5px, 9999px, 50px, 0);
+  }
+  10% {
+    clip: rect(45px, 9999px, 15px, 0);
+  }
+  15% {
+    clip: rect(56px, 9999px, 86px, 0);
+  }
+  20% {
+    clip: rect(56px, 9999px, 9px, 0);
+  }
+  25% {
+    clip: rect(50px, 9999px, 66px, 0);
+  }
+  30% {
+    clip: rect(82px, 9999px, 56px, 0);
+  }
+  35% {
+    clip: rect(16px, 9999px, 67px, 0);
+  }
+  40% {
+    clip: rect(7px, 9999px, 72px, 0);
+  }
+  45% {
+    clip: rect(73px, 9999px, 76px, 0);
+  }
+  50% {
+    clip: rect(10px, 9999px, 37px, 0);
+  }
+  55% {
+    clip: rect(19px, 9999px, 23px, 0);
+  }
+  60% {
+    clip: rect(27px, 9999px, 51px, 0);
+  }
+  65% {
+    clip: rect(63px, 9999px, 97px, 0);
+  }
+  70% {
+    clip: rect(27px, 9999px, 82px, 0);
+  }
+  75% {
+    clip: rect(68px, 9999px, 41px, 0);
+  }
+  80% {
+    clip: rect(36px, 9999px, 93px, 0);
+  }
+  85% {
+    clip: rect(9px, 9999px, 79px, 0);
+  }
+  90% {
+    clip: rect(18px, 9999px, 19px, 0);
+  }
+  95% {
+    clip: rect(57px, 9999px, 72px, 0);
+  }
+  100% {
+    clip: rect(100px, 9999px, 79px, 0);
+  }
+}
+.glitch3:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 260px;
+  text-shadow: -1px 0 red;
+  bottom: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse !important;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(57px, 9999px, 60px, 0);
+  }
+  5% {
+    clip: rect(69px, 9999px, 69px, 0);
+  }
+  10% {
+    clip: rect(42px, 9999px, 8px, 0);
+  }
+  15% {
+    clip: rect(92px, 9999px, 71px, 0);
+  }
+  20% {
+    clip: rect(40px, 9999px, 83px, 0);
+  }
+  25% {
+    clip: rect(51px, 9999px, 22px, 0);
+  }
+  30% {
+    clip: rect(77px, 9999px, 90px, 0);
+  }
+  35% {
+    clip: rect(34px, 9999px, 25px, 0);
+  }
+  40% {
+    clip: rect(91px, 9999px, 96px, 0);
+  }
+  45% {
+    clip: rect(2px, 9999px, 33px, 0);
+  }
+  50% {
+    clip: rect(10px, 9999px, 67px, 0);
+  }
+  55% {
+    clip: rect(3px, 9999px, 39px, 0);
+  }
+  60% {
+    clip: rect(88px, 9999px, 51px, 0);
+  }
+  65% {
+    clip: rect(68px, 9999px, 55px, 0);
+  }
+  70% {
+    clip: rect(86px, 9999px, 17px, 0);
+  }
+  75% {
+    clip: rect(58px, 9999px, 85px, 0);
+  }
+  80% {
+    clip: rect(11px, 9999px, 66px, 0);
+  }
+  85% {
+    clip: rect(12px, 9999px, 88px, 0);
+  }
+  90% {
+    clip: rect(100px, 9999px, 87px, 0);
+  }
+  95% {
+    clip: rect(56px, 9999px, 17px, 0);
+  }
+  100% {
+    clip: rect(97px, 9999px, 63px, 0);
+  }
+}
+.glitch3:before {
+  content: attr(data-text);
+  position: absolute;
+  left: 258px;
+  text-shadow: 1px 0 blue;
+  bottom: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.glitch, .glitch2, .glitch3 {
+  filter: invert(100%);
+}
+
+/*
+.##........########..########..########..########..########....######.
+.##........##...........##........##.....##........##.....##..##....##
+.##........##...........##........##.....##........##.....##..##......
+.##........######.......##........##.....######....########....######.
+.##........##...........##........##.....##........##...##..........##
+.##........##...........##........##.....##........##....##...##....##
+.########..########.....##........##.....########..##.....##...######.
+Each letter must be its own .letter span, all in one .letters div
+*/
+.letters {
+  font-size: 27px;
+  font-family: monospace;
+  line-height: 30px;
+  animation-play-state: paused;
+}
+
+.letter {
+  width: 15px;
+  display: inline-block;
+  vertical-align: -6px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0;
+  font-size: 27px;
+  animation-play-state: inherit;
+}
+
+.letter:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  word-break: break-all;
+  background-color: white;
+  margin-top: -240px;
+  -webkit-animation-name: letter1;
+  animation-name: letter1;
+  -webkit-animation-timing-function: steps(9);
+  animation-timing-function: steps(9);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-play-state: inherit;
+}
+
+.is-animated .letter:before {
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.letter:nth-child(1):before {
+  content: "3756901428";
+  -webkit-animation-duration: 2.09778s;
+  animation-duration: 2.09778s;
+  -webkit-animation-delay: 0.41s;
+  animation-delay: 0.41s;
+}
+
+.letter:nth-child(2):before {
+  content: "0723986145";
+  -webkit-animation-duration: 3.37778s;
+  animation-duration: 3.37778s;
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+}
+
+.letter:nth-child(26):before {
+  content: "4298603571";
+  -webkit-animation-duration: 0.99556s;
+  animation-duration: 0.99556s;
+  -webkit-animation-delay: 0.72s;
+  animation-delay: 0.72s;
+}
+
+@-webkit-keyframes letter1 {
+  from {
+    margin-top: -240px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+@keyframes letter1 {
+  from {
+    margin-top: -240px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+.letter:nth-child(3):before {
+  content: "2105438769";
+  margin-top: 0px;
+  -webkit-animation-name: letter3;
+  animation-name: letter3;
+  -webkit-animation-duration: 0s;
+  animation-duration: 0s;
+  -webkit-animation-timing-function: steps(1);
+  animation-timing-function: steps(1);
+  -webkit-animation-delay: 0.13s;
+  animation-delay: 0.13s;
+}
+
+.letter:nth-child(17):before {
+  content: "5183046972";
+  margin-top: 0px;
+  -webkit-animation-name: letter3;
+  animation-name: letter3;
+  -webkit-animation-duration: 1.13143s;
+  animation-duration: 1.13143s;
+  -webkit-animation-timing-function: steps(1);
+  animation-timing-function: steps(1);
+  -webkit-animation-delay: 0.53s;
+  animation-delay: 0.53s;
+}
+
+.letter:nth-child(22):before {
+  content: "8137069425";
+  margin-top: 0px;
+  -webkit-animation-name: letter3;
+  animation-name: letter3;
+  -webkit-animation-duration: 0s;
+  animation-duration: 0s;
+  -webkit-animation-timing-function: steps(1);
+  animation-timing-function: steps(1);
+  -webkit-animation-delay: 0.78s;
+  animation-delay: 0.78s;
+}
+
+.letter:nth-child(23):before {
+  content: "4127589063";
+  margin-top: 0px;
+  -webkit-animation-name: letter3;
+  animation-name: letter3;
+  -webkit-animation-duration: 0s;
+  animation-duration: 0s;
+  -webkit-animation-timing-function: steps(1);
+  animation-timing-function: steps(1);
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+@-webkit-keyframes letter3 {
+  from {
+    margin-top: 0px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+@keyframes letter3 {
+  from {
+    margin-top: 0px;
+  }
+  to {
+    margin-top: 36px;
+  }
+}
+
+.letter:nth-child(4):before {
+  content: "5183046972";
+  margin-top: -180px;
+  -webkit-animation-name: letter4;
+  animation-name: letter4;
+  -webkit-animation-duration: 3.08571s;
+  animation-duration: 3.08571s;
+  -webkit-animation-timing-function: steps(7);
+  animation-timing-function: steps(7);
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.letter:nth-child(5):before {
+  content: "4328697105";
+  margin-top: -180px;
+  -webkit-animation-name: letter4;
+  animation-name: letter4;
+  -webkit-animation-duration: 1.13143s;
+  animation-duration: 1.13143s;
+  -webkit-animation-timing-function: steps(7);
+  animation-timing-function: steps(7);
+  -webkit-animation-delay: 0.67s;
+  animation-delay: 0.67s;
+}
+
+.letter:nth-child(6):before {
+  content: "5029348617";
+  margin-top: -180px;
+  -webkit-animation-name: letter4;
+  animation-name: letter4;
+  -webkit-animation-duration: 0.85714s;
+  animation-duration: 0.85714s;
+  -webkit-animation-timing-function: steps(7);
+  animation-timing-function: steps(7);
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+
+.letter:nth-child(13):before {
+  content: "6078193245";
+  margin-top: -180px;
+  -webkit-animation-name: letter4;
+  animation-name: letter4;
+  -webkit-animation-duration: 0.99429s;
+  animation-duration: 0.99429s;
+  -webkit-animation-timing-function: steps(7);
+  animation-timing-function: steps(7);
+  -webkit-animation-delay: 0.71s;
+  animation-delay: 0.71s;
+}
+
+.letter:nth-child(16):before {
+  content: "9360174528";
+  margin-top: -180px;
+  -webkit-animation-name: letter4;
+  animation-name: letter4;
+  -webkit-animation-duration: 1.85143s;
+  animation-duration: 1.85143s;
+  -webkit-animation-timing-function: steps(7);
+  animation-timing-function: steps(7);
+  -webkit-animation-delay: 0.46s;
+  animation-delay: 0.46s;
+}
+
+.letter:nth-child(25):before {
+  content: "8397056412";
+  margin-top: -180px;
+  -webkit-animation-name: letter4;
+  animation-name: letter4;
+  -webkit-animation-duration: 2.50286s;
+  animation-duration: 2.50286s;
+  -webkit-animation-timing-function: steps(7);
+  animation-timing-function: steps(7);
+  -webkit-animation-delay: 0.27s;
+  animation-delay: 0.27s;
+}
+
+.letter:nth-child(27):before {
+  content: "0286134957";
+  margin-top: -180px;
+  -webkit-animation-name: letter4;
+  animation-name: letter4;
+  -webkit-animation-duration: 0.20571s;
+  animation-duration: 0.20571s;
+  -webkit-animation-timing-function: steps(7);
+  animation-timing-function: steps(7);
+  -webkit-animation-delay: 0.94s;
+  animation-delay: 0.94s;
+}
+
+@-webkit-keyframes letter4 {
+  from {
+    margin-top: -180px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+@keyframes letter4 {
+  from {
+    margin-top: -180px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+.letter:nth-child(7):before {
+  content: "3521084769";
+  margin-top: -210px;
+  -webkit-animation-name: letter7;
+  animation-name: letter7;
+  -webkit-animation-duration: 1.785s;
+  animation-duration: 1.785s;
+  -webkit-animation-timing-function: steps(8);
+  animation-timing-function: steps(8);
+  -webkit-animation-delay: 0.49s;
+  animation-delay: 0.49s;
+}
+
+.letter:nth-child(18):before {
+  content: "6078193245";
+  margin-top: -210px;
+  -webkit-animation-name: letter7;
+  animation-name: letter7;
+  -webkit-animation-duration: 1.188s;
+  animation-duration: 1.188s;
+  -webkit-animation-timing-function: steps(8);
+  animation-timing-function: steps(8);
+  -webkit-animation-delay: 0.62s;
+  animation-delay: 0.62s;
+}
+
+@-webkit-keyframes letter7 {
+  from {
+    margin-top: -210px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+@keyframes letter7 {
+  from {
+    margin-top: -210px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+.letter:nth-child(8):before {
+  content: "3846105729";
+  margin-top: -270px;
+  -webkit-animation-name: letter8;
+  animation-name: letter8;
+  -webkit-animation-duration: 1.188s;
+  animation-duration: 1.188s;
+  -webkit-animation-timing-function: steps(10);
+  animation-timing-function: steps(10);
+  -webkit-animation-delay: 0.67s;
+  animation-delay: 0.67s;
+}
+
+.letter:nth-child(28):before {
+  content: "9216058473";
+  margin-top: -270px;
+  -webkit-animation-name: letter8;
+  animation-name: letter8;
+  -webkit-animation-duration: 2.448s;
+  animation-duration: 2.448s;
+  -webkit-animation-timing-function: steps(10);
+  animation-timing-function: steps(10);
+  -webkit-animation-delay: 0.32s;
+  animation-delay: 0.32s;
+}
+
+@-webkit-keyframes letter8 {
+  from {
+    margin-top: -270px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+@keyframes letter8 {
+  from {
+    margin-top: -270px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+.letter:nth-child(9):before {
+  content: "7569420318";
+  margin-top: -30px;
+  -webkit-animation-name: letter9;
+  animation-name: letter9;
+  -webkit-animation-duration: 1.86s;
+  animation-duration: 1.86s;
+  -webkit-animation-timing-function: steps(2);
+  animation-timing-function: steps(2);
+  -webkit-animation-delay: 0.07s;
+  animation-delay: 0.07s;
+}
+
+.letter:nth-child(15):before {
+  content: "4089371625";
+  margin-top: -30px;
+  -webkit-animation-name: letter9;
+  animation-name: letter9;
+  -webkit-animation-duration: 1.24s;
+  animation-duration: 1.24s;
+  -webkit-animation-timing-function: steps(2);
+  animation-timing-function: steps(2);
+  -webkit-animation-delay: 0.38s;
+  animation-delay: 0.38s;
+}
+
+.letter:nth-child(24):before {
+  content: "1762549380";
+  margin-top: -30px;
+  -webkit-animation-name: letter9;
+  animation-name: letter9;
+  -webkit-animation-duration: 1.26s;
+  animation-duration: 1.26s;
+  -webkit-animation-timing-function: steps(2);
+  animation-timing-function: steps(2);
+  -webkit-animation-delay: 0.37s;
+  animation-delay: 0.37s;
+}
+
+@-webkit-keyframes letter9 {
+  from {
+    margin-top: -30px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+@keyframes letter9 {
+  from {
+    margin-top: -30px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+.letter:nth-child(10):before {
+  content: "9420851736";
+  margin-top: -90px;
+  -webkit-animation-name: letter10;
+  animation-name: letter10;
+  -webkit-animation-duration: 2.4s;
+  animation-duration: 2.4s;
+  -webkit-animation-timing-function: steps(4);
+  animation-timing-function: steps(4);
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.letter:nth-child(29):before {
+  content: "6975821043";
+  margin-top: -90px;
+  -webkit-animation-name: letter10;
+  animation-name: letter10;
+  -webkit-animation-duration: 2.55s;
+  animation-duration: 2.55s;
+  -webkit-animation-timing-function: steps(4);
+  animation-timing-function: steps(4);
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+
+@-webkit-keyframes letter10 {
+  from {
+    margin-top: -90px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+@keyframes letter10 {
+  from {
+    margin-top: -90px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+.letter:nth-child(11):before {
+  content: "5283497601";
+  margin-top: -120px;
+  -webkit-animation-name: letter11;
+  animation-name: letter11;
+  -webkit-animation-duration: 2.144s;
+  animation-duration: 2.144s;
+  -webkit-animation-timing-function: steps(5);
+  animation-timing-function: steps(5);
+  -webkit-animation-delay: 0.33s;
+  animation-delay: 0.33s;
+}
+
+.letter:nth-child(12):before {
+  content: "4758632901";
+  margin-top: -120px;
+  -webkit-animation-name: letter11;
+  animation-name: letter11;
+  -webkit-animation-duration: 1.376s;
+  animation-duration: 1.376s;
+  -webkit-animation-timing-function: steps(5);
+  animation-timing-function: steps(5);
+  -webkit-animation-delay: 0.57s;
+  animation-delay: 0.57s;
+}
+
+.letter:nth-child(14):before {
+  content: "5714083962";
+  margin-top: -120px;
+  -webkit-animation-name: letter11;
+  animation-name: letter11;
+  -webkit-animation-duration: 1.856s;
+  animation-duration: 1.856s;
+  -webkit-animation-timing-function: steps(5);
+  animation-timing-function: steps(5);
+  -webkit-animation-delay: 0.42s;
+  animation-delay: 0.42s;
+}
+
+@-webkit-keyframes letter11 {
+  from {
+    margin-top: -120px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+@keyframes letter11 {
+  from {
+    margin-top: -120px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+.letter:nth-child(19):before {
+  content: "5832741609";
+  margin-top: -150px;
+  -webkit-animation-name: letter19;
+  animation-name: letter19;
+  -webkit-animation-duration: 1.26667s;
+  animation-duration: 1.26667s;
+  -webkit-animation-timing-function: steps(6);
+  animation-timing-function: steps(6);
+  -webkit-animation-delay: 0.62s;
+  animation-delay: 0.62s;
+}
+
+.letter:nth-child(21):before {
+  content: "2384701965";
+  margin-top: -150px;
+  -webkit-animation-name: letter19;
+  animation-name: letter19;
+  -webkit-animation-duration: 1.8s;
+  animation-duration: 1.8s;
+  -webkit-animation-timing-function: steps(6);
+  animation-timing-function: steps(6);
+  -webkit-animation-delay: 0.46s;
+  animation-delay: 0.46s;
+}
+
+.letter:nth-child(30):before {
+  content: "2560174983";
+  margin-top: -150px;
+  -webkit-animation-name: letter19;
+  animation-name: letter19;
+  -webkit-animation-duration: 0.03333s;
+  animation-duration: 0.03333s;
+  -webkit-animation-timing-function: steps(6);
+  animation-timing-function: steps(6);
+  -webkit-animation-delay: 0.99s;
+  animation-delay: 0.99s;
+}
+
+@-webkit-keyframes letter19 {
+  from {
+    margin-top: -150px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+@keyframes letter19 {
+  from {
+    margin-top: -150px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+.letter:nth-child(20):before {
+  content: "2860974513";
+  margin-top: -60px;
+  -webkit-animation-name: letter20;
+  animation-name: letter20;
+  -webkit-animation-duration: 1.06667s;
+  animation-duration: 1.06667s;
+  -webkit-animation-timing-function: steps(3);
+  animation-timing-function: steps(3);
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+@-webkit-keyframes letter20 {
+  from {
+    margin-top: -60px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}
+
+@keyframes letter20 {
+  from {
+    margin-top: -60px;
+  }
+  to {
+    margin-top: 30px;
+  }
+}

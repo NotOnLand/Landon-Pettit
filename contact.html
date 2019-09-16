@@ -39,12 +39,24 @@
     </nav>
 
     <article class="contact">
+      <form action="https://formspree.io/landonpettit@aol.com" method="POST" class="form-group" id="contact">
+        <h3>Contact Me</h3>
+        <p class="form-text">Send me an <a class="font-weight-bold" href="mailto:landonpettit@aol.com">email</a> or leave a message here</p>
 
-      <section class="info">
-      </section>
-      <section class="form">
-      </section>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" placeholder="Name" class="form-control" required>
+        <br>
+        <label for="email">Your email address</label>
+        <input type="email" id="email" name="Email" placeholder="Email" class="form-control" required>
+        <br>
+        <label for="message">Your message</label><br>
+        <textarea id="message" name="Message" placeholder="Your message" class="form-control" required></textarea><br>
 
+        <div class="row justify-content-center">
+          <button type="submit" class="btn btn-success col-3">Submit</button>
+          <button type="reset" class="btn btn-danger col-3 offset-2">Reset</button>
+        </div>
+      </form>
     </article>
 
     <footer class="col-12">

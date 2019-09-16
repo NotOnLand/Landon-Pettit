@@ -27,6 +27,7 @@ hr {
   border-top: 1px solid rgba(255,255,255,.2);
   margin: 0;
 }
+
 #site-id {
   white-space: nowrap;
   padding-top: 1rem;
@@ -126,33 +127,33 @@ hr {
     width: 100%;
     background-color: $dark;
   }
-.dropdown-item.act-filter, .dropdown-item.act-sort {
-  background-color: $green;
-}
-.btn-outline-light {
-  &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, &.dropdown-toggle {
-    background-color: $dark;
+  .dropdown-item.act-filter, .dropdown-item.act-sort {
+    background-color: $green;
   }
-}
-.sort.ascending::after {
-  display: inline-block;
-  content: url(../images/down.svg);
-  width: 1.3rem;
-  line-height: 0px;
-  margin-left: 0.2rem;
-  vertical-align: text-top;
-}
-.sort.descending::after {
-  display: inline-block;
-  content: url(../images/up.svg);
-  width: 1.3rem;
-  line-height: 0px;
-  margin-left: 0.2rem;
-  vertical-align: text-top;
-}
-#dropdownMenuButton::after {
-  display: none;
-}
+  .btn-outline-light {
+    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, &.dropdown-toggle {
+      background-color: $dark;
+    }
+  }
+  .sort.ascending::after {
+    display: inline-block;
+    content: url(../images/down.svg);
+    width: 1.3rem;
+    line-height: 0px;
+    margin-left: 0.2rem;
+    vertical-align: text-top;
+  }
+  .sort.descending::after {
+    display: inline-block;
+    content: url(../images/up.svg);
+    width: 1.3rem;
+    line-height: 0px;
+    margin-left: 0.2rem;
+    vertical-align: text-top;
+  }
+  #dropdownMenuButton::after {
+    display: none;
+  }
 }
 
 .works {
@@ -207,6 +208,7 @@ hr {
 footer {
   position: absolute;
   border-top: 2px solid rgba(255,255,255,.1);
+  margin-top: 2rem;
   color: rgba(255,255,255,.3);
   right: 0;
   left: 0;
@@ -227,4 +229,53 @@ footer {
       color: white;
     }
   }
+}
+
+.bio {
+  h3 {
+    margin-top: 1rem;
+  }
+  img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 50%;
+  }
+}
+
+.resume {
+  margin-bottom: 2rem;
+  ul {
+    list-style: none;
+  }
+}
+
+.contact {
+  h3 {
+    margin-top: 1rem;
+  }
+}
+
+.details {
+  h3 {
+    margin-top: 1rem;
+  }
+  img, image {
+    width: 100%;
+    height: auto;
+  }
+  p {
+    text-align: justify;
+  }
+  .image {
+    margin-top: 1rem;
+  }
+}
+
+.modal-content {
+  border: none;
+}
+.modal-body {
+  padding: 0;
 }

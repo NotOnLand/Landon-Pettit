@@ -234,6 +234,7 @@ hr {
 footer {
   position: absolute;
   border-top: 2px solid rgba(255, 255, 255, 0.1);
+  margin-top: 2rem;
   color: rgba(255, 255, 255, 0.3);
   right: 0;
   left: 0;
@@ -258,4 +259,53 @@ footer a.active {
 
 footer a:hover {
   color: white;
+}
+
+.bio h3 {
+  margin-top: 1rem;
+}
+
+.bio img {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 50%;
+}
+
+.resume {
+  margin-bottom: 2rem;
+}
+
+.resume ul {
+  list-style: none;
+}
+
+.contact h3 {
+  margin-top: 1rem;
+}
+
+.details h3 {
+  margin-top: 1rem;
+}
+
+.details img, .details image {
+  width: 100%;
+  height: auto;
+}
+
+.details p {
+  text-align: justify;
+}
+
+.details .image {
+  margin-top: 1rem;
+}
+
+.modal-content {
+  border: none;
+}
+
+.modal-body {
+  padding: 0;
 }
