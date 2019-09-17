@@ -363,6 +363,26 @@ footer a:hover {
   margin-top: 1rem;
 }
 
+.details .wrapper {
+  overflow: hidden;
+  height: 40rem;
+  padding: 0;
+}
+
+.details iframe {
+  position: absolute;
+  border: none;
+  transform-origin: 0 0;
+  width: 108.7%;
+  height: 100%;
+  transform: scale(0.915);
+  overflow-x: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .modal-content {
   border: none;
 }
