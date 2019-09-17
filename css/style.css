@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Black Quartz";
+  src: url("fonts/black-quartz.woff") format("woff");
+}
+
 body {
   background-color: #32323C;
   color: white;
@@ -359,6 +364,10 @@ footer a:hover {
   text-align: justify;
 }
 
+.details p a {
+  font-weight: bold;
+}
+
 .details .image {
   margin-top: 1rem;
 }
@@ -369,7 +378,7 @@ footer a:hover {
   padding: 0;
 }
 
-.details iframe {
+.details .wrapper iframe {
   position: absolute;
   border: none;
   transform-origin: 0 0;
@@ -381,6 +390,40 @@ footer a:hover {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.details .wrapper#weather {
+  height: 35rem;
+}
+
+.details .wrapper#weather iframe {
+  transform: scale(0.5);
+  width: 200%;
+  height: 200%;
+}
+
+.details .issuuwrapper {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.details .issuuwrapper .issuuembed {
+  position: absolute;
+  top: -32px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 570px;
+}
+
+#fonttest {
+  width: 100%;
+  min-height: 20rem;
+  padding: .75em;
+  font-size: 1.2em;
+  font-family: "Black Quartz";
+  color: black;
 }
 
 .modal-content {
