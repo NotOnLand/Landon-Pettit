@@ -13,14 +13,20 @@ body {
 a {
   color: white;
   text-decoration: none;
-  transition: opacity .2s;
-  &:hover {
+  transition: .2s;
+  &:hover  {
+    color: rgba(255,255,255,.7);
     text-decoration: none;
-    opacity: .7;
+    img[src*="svg"] {
+      opacity: .7;
+    }
   }
   &:active {
+    color: rgba(255,255,255,.4);
     text-decoration: none;
-    opacity: .4;
+    img[src*="svg"] {
+      opacity: .4;
+    }
   }
 }
 
@@ -231,7 +237,7 @@ hr {
 footer {
   position: absolute;
   border-top: 2px solid rgba(255,255,255,.1);
-  margin-top: 2rem;
+  margin-top: 6rem;
   margin-bottom: -6rem;
   color: rgba(255,255,255,.3);
   right: 0;
@@ -259,9 +265,13 @@ footer {
 
 .elevator {
   display: block;
+  position: absolute;
   margin: 1rem auto;
   height: 1rem;
   width: 1.5rem;
+  bottom: -7rem;
+  right: 50%;
+  transform: translateX(50%);
   opacity: .8;
   transition: .2s;
   &:hover {
@@ -356,6 +366,12 @@ footer {
   }
   #socialbar {
     bottom: 35vh;
+  }
+  .bio {
+    img {
+      width: 60%;
+      margin-right: 8rem;
+    }
   }
 }
 
