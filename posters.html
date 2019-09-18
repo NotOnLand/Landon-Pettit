@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title> - Landon Pettit Art & Design</title>
+  <title>Retro Monster Movie Posters - Landon Pettit Art & Design</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/ekko-lightbox.css">
@@ -42,39 +42,54 @@
     <article class="details">
 
         <div class="image float-left col-12 col-lg-6">
-          <a href="images/#.jpg" data-toggle="lightbox" data-gallery="#">
+          <a href="images/shape.jpg" data-toggle="lightbox" data-gallery="posters">
             <picture>
-              <source media="(min-width: 768px)" srcset="images/#.jpg">
-              <img src="images/small/#.jpg" alt="" class="focusup" />
+              <source media="(min-width: 768px)" srcset="images/shape.jpg">
+              <img src="images/small/shape.jpg" alt="The Shape of Water (2017)" />
             </picture>
           </a>
         </div>
       <div class="float-left col-12 col-lg-6 float-lg-right">
-        <h3></h3>
-        <p></p>
+        <h3>Retro Monster Movie Posters</h3>
+        <p>As a study of vintage monster movie posters and hand lettering, I recreated some classics as modern films.</p>
+          <ul>
+            <li><em>IT</em> (2017) as <em>The Body Snatcher</em> (1945)</li>
+            <li><em>The Shape of Water</em> (2017) as <em>The Creature from the Black Lagoon</em> (1954)</li>
+            <li><em>Split</em> (2016) as <em>Psycho</em> (1960)</li>
+          </ul>
+          <p class="attrib">Original posters courtesy of <a href="emovieposter.com">eMoviePoster.com</a></p>
+      </div>
+
+      <div class="d-none">
+        <a href="images/shape-original.jpg" data-toggle="lightbox" data-gallery="posters">.</a>
       </div>
 
       <div class="image float-left col-12 col-md-6 col-lg-3">
-        <a href="images/#.jpg" data-toggle="lightbox" data-gallery="#">
+        <a href="images/it.jpg" data-toggle="lightbox" data-gallery="posters">
           <picture>
-            <source media="(min-width: 768px)" srcset="images/#.jpg">
-            <img src="images/small/#.jpg" alt="" class="focusup" />
+            <source media="(min-width: 768px)" srcset="images/it.jpg">
+            <img src="images/small/it.jpg" alt="IT (2017)" />
           </picture>
           </a>
       </div>
 
+      <div class="d-none">
+        <a href="images/it-original.jpg" data-toggle="lightbox" data-gallery="posters">.</a>
+      </div>
 
-        <div class="image float-left col-12 col-md-4 col-lg-2">
-          <a href="images/#.jpg" data-toggle="lightbox" data-gallery="#">
-            <picture>
-              <source media="(min-width: 768px)" srcset="images/#.jpg">
-              <img src="images/small/#.jpg" alt="" class="focusup" />
-            </picture>
-            </a>
-        </div>
+      <div class="image float-left col-12 col-md-6 col-lg-3">
+        <a href="images/split.jpg" data-toggle="lightbox" data-gallery="posters">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/split.jpg">
+            <img src="images/small/split.jpg" alt="Split (2016)" />
+          </picture>
+          </a>
+      </div>
 
+      <div class="d-none">
+        <a href="images/split-original.jpg" data-toggle="lightbox" data-gallery="posters">.</a>
+      </div>
 
-      <a class="elevator" href="#page" ><img src="images/top.svg" /></a>
 
     </article>
 
@@ -97,10 +112,13 @@
     <li class="nav-item"><a href="https://society6.com/notonland" target="_blank"><img src="images/society6.svg" alt="Society6"></a></li>
   </ul>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <a id="elevator" title="Back to top" href="#">&#10148;</a>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="js/ekko-lightbox.min.js"></script>
+  <script src="js/elevator.js"></script>
   <script>
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
                 event.preventDefault();
