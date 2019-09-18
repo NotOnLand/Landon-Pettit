@@ -257,15 +257,19 @@ hr {
 .work-item img, .work-item--width2 img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: 50% 40%;
   object-position: 50% 40%;
 }
 
 .work-item img.focusup, .work-item--width2 img.focusup {
+  -o-object-position: 50% 10%;
   object-position: 50% 10%;
 }
 
 .work-item img.focusdown, .work-item--width2 img.focusdown {
+  -o-object-position: 50% 90%;
   object-position: 50% 90%;
 }
 
@@ -476,9 +480,11 @@ footer a:hover {
     width: 100%;
   }
   .resume {
+    -moz-columns: 2;
     columns: 2;
   }
   .resume * {
+    -moz-column-break-inside: avoid;
     break-inside: avoid;
   }
   .resume > section > section {
