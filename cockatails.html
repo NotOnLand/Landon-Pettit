@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Cockatails - Landon Pettit Art & Design</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/ekko-lightbox.css">
+  <script src="https://kit.fontawesome.com/55ef6b9bff.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!--[if lt IE 9]>
+  	<script src="js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div id="page" class="container">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a href="index.html" id="site-id" class="navbar-brand">
+        <img src="images/siteid.svg" alt="Landon Pettit Art and Design" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="navigation" class="navbar-nav ml-auto">
+            <li class="nav-item mx-auto"><a class="nav-link" href="index.html">Portfolio</a></li>
+            <li class="nav-item mx-auto"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item mx-auto"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <hr class="d-block d-md-none">
+          <ul id="social" class="navbar-nav d-flex flex-flow justify-content-around ">
+            <li class="nav-item"><a href="https://www.linkedin.com/in/landon-pettit-497393198/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+
+            <li class="nav-item"><a href="https://www.instagram.com/landonpettit/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+
+            <li class="nav-item"><a href="https://landrawings.tumblr.com/" target="_blank"><i class="fab fa-tumblr"></i></a></li>
+
+            <li class="nav-item"><a href="https://www.redbubble.com/people/stskeletine" target="_blank"><i class="fas fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <article class="details">
+
+      <div class="image float-left col-12 col-lg-6 wrapper" id="weather"><iframe src="http://recipe.landonpettit.design/">
+      </iframe></div>
+
+      <div class="float-left col-12 col-lg-6 float-lg-right">
+        <h3>Cockatails - Bartending for Birdbrains</h3>
+        <p>A cocktail recipe site meant to be as friendly as possible to beginners. I noticed most drink sites have a fancy or downright elitist feel, so I wanted Cockatails to be straightforward and inviting. Users can browse recipes, search by category, or enter what ingredients they have to see what they could make. Each ingredient has a small info popup that leads to a page with more detailed descriptions and examples, and the 'How-To' section gives step-by-step instructions for common actions like shaking and muddling.</p>
+
+        <p>My first foray in to Wordpress, recipes and ingredients can be added as custom posts. <a href="http://recipe.landonpettit.design/" target="_blank">View a live version here.</a></p>
+      </div>
+
+      <div class="image float-left col-12 col-md-6 ">
+        <a href="images/cockatails_mockup.png" data-toggle="lightbox" data-gallery="weather">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/cockatails_mockup.png">
+            <img src="images/small/cockatails_mockup.png" alt="Website mockup" />
+          </picture>
+          </a>
+      </div>
+
+    </article>
+
+    <footer class="col-12">
+      <p>©2019 Landon Pettit<br>
+        <a href="index.html">Portfolio</a>
+        &nbsp;&nbsp; • &nbsp;&nbsp;
+        <a href="about.html">About</a>
+        &nbsp;&nbsp; • &nbsp;&nbsp;
+        <a href="contact.html">Contact</a>
+        </p>
+    </footer>
+
+  </div>
+
+  <a id="elevator" title="Back to top" href="#">&#10148;</a>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/ekko-lightbox.min.js"></script>
+  <script src="js/elevator.js"></script>
+  <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+  </script>
+
+</body>
+</html>
