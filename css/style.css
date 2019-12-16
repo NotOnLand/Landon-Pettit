@@ -535,9 +535,7 @@ footer a:hover {
   .work-item:hover .moreinfo {
     z-index: 2;
     bottom: 0;
-  }
-  .work-item:hover .moreinfo a, .work-item:hover .moreinfo h3, .work-item:hover .moreinfo p {
-    opacity: 1 !important;
+    color: white;
   }
   #social {
     margin: 1rem;
