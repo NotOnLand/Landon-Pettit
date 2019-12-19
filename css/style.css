@@ -478,6 +478,14 @@ footer a:hover {
   opacity: 1;
 }
 
+.hard.blank {
+  background-color: white;
+}
+
+.hard.blank.blue {
+  background-color: #403a60;
+}
+
 @media (min-width: 768px) {
   #social {
     max-width: 20rem;

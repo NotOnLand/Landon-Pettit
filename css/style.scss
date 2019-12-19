@@ -447,6 +447,13 @@ footer {
   }
 }
 
+.hard.blank {
+  background-color: white;
+  &.blue {
+    background-color: #403a60;
+  }
+}
+
 @media (min-width: 768px) {
   #social {
     max-width: 20rem;
