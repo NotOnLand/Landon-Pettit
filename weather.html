@@ -46,8 +46,27 @@
 
     <article class="details">
 
-      <div class="image float-left col-12 col-lg-6 wrapper" id="weather"><iframe src="pages/weather/index.html">
-      </iframe></div>
+      <div class="image float-left col-12 col-lg-6 wrapper" id="weather">
+        <iframe name="weatherframe" id="weatherframe" srcdoc="
+          <style>
+            body{margin: 0;}
+            img{width: 100%;}
+            ::-webkit-scrollbar {width: .5rem;}
+            ::-webkit-scrollbar-track {background: rgba(255,255,255,0.2);}
+            ::-webkit-scrollbar-thumb {
+              background: rgba(128,128,128,.5);
+              opacity: .5;
+              border-radius: .5rem;
+            }
+            ::-webkit-scrollbar-thumb:hover {background: rgb(128,128,128);}
+          </style>
+          <a href='pages/weather/index.html' target='weatherframe'>
+            <img src='images/weather_temp.jpg' alt='weather app minisite' title='Click to load preview'/>
+          </a>
+        " src="pages/weather/index.html">
+          <img src="images/weather_temp.jpg" alt="weather app minisite" title="Your browser does not support the preview" />
+        </iframe>
+      </div>
 
       <div class="float-left col-12 col-lg-6 float-lg-right">
         <h3>Happy Weather Minisite</h3>
@@ -55,27 +74,17 @@
 
         <p>I started with the mobile version, intending for it to be usable while driving without being distracting. A changing graphic at the top would reflect the weather conditions at the current or chosen location. Swiping left or right or tapping the date would scroll through the forecast for the next week, and tapping the temperature would show the hourly forecast for the day.</p>
 
-        <p>I also expanded it for use on tablets and computers, showing more detailed information the larger the screen.</p>
       </div>
 
-      <div class="image float-left col-12 col-md-6 col-lg-3">
-        <a href="images/weathermockup.jpg" data-toggle="lightbox" data-gallery="weather">
+      <div class="image float-left col-12 col-lg-6">
+        <a href="images/weather_mockup.png" data-toggle="lightbox" data-gallery="weather">
           <picture>
-            <source media="(min-width: 768px)" srcset="images/weathermockup.jpg">
-            <img src="images/small/weathermockup.jpg" alt="App mockup" />
+            <source media="(min-width: 768px)" srcset="images/weather_mockup.png">
+            <img src="images/small/weather_mockup.png" alt="App mockup" />
           </picture>
           </a>
       </div>
 
-
-        <div class="image float-left col-12 col-md-6 col-lg-3">
-          <a href="images/weathermockup2.jpg" data-toggle="lightbox" data-gallery="weather">
-            <picture>
-              <source media="(min-width: 768px)" srcset="images/weathermockup2.jpg">
-              <img src="images/small/weathermockup2.jpg" alt="App mockup" />
-            </picture>
-            </a>
-        </div>
 
     </article>
 

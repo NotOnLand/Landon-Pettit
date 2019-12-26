@@ -6,6 +6,23 @@ $green: #278B5A;
     src: url("fonts/black-quartz.woff") format('woff');
 }
 
+::-webkit-scrollbar {
+  width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(128,128,128,.5);
+  opacity: .5;
+  border-radius: .5rem;
+  &:hover {
+    background: rgb(128,128,128);
+  }
+}
+
 body {
   background-color: $dark;
   color: white;

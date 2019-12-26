@@ -46,8 +46,27 @@
 
     <article class="details">
 
-      <div class="image float-left col-12 col-lg-6 wrapper" id="weather"><iframe src="http://recipe.landonpettit.design/">
-      </iframe></div>
+      <div class="image float-left col-12 col-lg-6 wrapper" id="weather">
+      <iframe name="recipeframe" id="recipeframe" srcdoc="
+        <style>
+          body{margin: 0;}
+          img{width: 100%;}
+          ::-webkit-scrollbar {width: .5rem;}
+          ::-webkit-scrollbar-track {background: rgba(255,255,255,0.2);}
+          ::-webkit-scrollbar-thumb {
+            background: rgba(128,128,128,.5);
+            opacity: .5;
+            border-radius: .5rem;
+          }
+          ::-webkit-scrollbar-thumb:hover {background: rgb(128,128,128);}
+        </style>
+        <a href='http://recipe.landonpettit.design/' target='recipeframe'>
+          <img src='images/cockatails_temp.jpg' alt='cocktail recipe site' title='Click to load preview' />
+        </a>
+        " src="http://recipe.landonpettit.design/">
+        <img src="images/cockatails_temp.jpg" alt="cocktail recipe site" title="Your browser does not support the preview" />
+      </iframe>
+    </div>
 
       <div class="float-left col-12 col-lg-6 float-lg-right">
         <h3>Cockatails - Bartending for Birdbrains</h3>
