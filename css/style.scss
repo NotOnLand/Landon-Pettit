@@ -397,7 +397,7 @@ footer {
       left: 0;
       right: 0;
     }
-    &#weather {
+    &#external {
       height: 35rem;
         iframe {
         transform: scale(.25);
@@ -513,7 +513,7 @@ footer {
       height: 100%;
       transform: scale(0.915);
     }
-  &#weather iframe {
+  &#external iframe {
       transform: scale(.5);
       width: 200%;
       height: 200%;
