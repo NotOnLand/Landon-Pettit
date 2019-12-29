@@ -435,21 +435,6 @@ footer a:hover {
   height: 400%;
 }
 
-.details .issuuwrapper {
-  height: 500px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.details .issuuwrapper .issuuembed {
-  position: absolute;
-  top: -32px;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 570px;
-}
-
 #fonttest {
   width: 100%;
   min-height: 20rem;
@@ -502,6 +487,14 @@ footer a:hover {
 
 .hard.blank.blue {
   background-color: #403a60;
+}
+
+#bug {
+  display: inline-block;
+  height: 1.2em;
+  width: auto;
+  padding: 0;
+  margin-left: .1em;
 }
 
 @media (min-width: 768px) {
